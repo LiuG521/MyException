@@ -55,7 +55,7 @@ public class userController {
 		out.print("<script>alert('admin');location.href='regiest.html';</script>");
 		out.flush();
 		out.close();
-		System.out.println("223");
+		System.out.println("2ss23");
 		//return "forward:regiest.html";
 	}
 	
