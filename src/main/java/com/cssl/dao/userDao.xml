@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="userDao" >
+
+	<!-- 用户注册 -->
+	<insert id="regiest">
+		INSERT INTO users(userName,userPwd,userQicq,userTel,userPhoto) 
+		VALUES(#{userName},#{userPwd},#{userQicq},#{userTel},#{userPhoto})
+	</insert>
+	
+	<!-- 用户登录 -->
+	<select id="Login" resultType="Users">
+		select * from users where userName=#{userName} and userPwd = #{userPwd}
+	</select>
+
+	<!--新增异常-->
+	<select id="saveError">
+		INSERT INTO errorInfo(errorTitle,errorFilePath,errorUserId)
+		VALUES(errorTitle,errorFilePath,errorUserId)
+	</select>
+	
+</mapper>

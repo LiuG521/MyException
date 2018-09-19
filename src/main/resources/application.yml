@@ -1,0 +1,28 @@
+server:
+  port: 8081
+
+mybatis:
+  type-aliases-package: com.cssl.pojo
+  mapper-locations: classpath:com/cssl/com.cssl.action.dao/*.xml
+  configuration:
+    auto-mapping-behavior: full
+    use-generated-keys: true
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql:///usererror
+    username: root
+    password: sasa
+
+  jackson:
+    date-format: yyyy-MM-dd HH:mm
+    time-zone: GMT+8
+
+##thymeleaf start
+#  thymeleaf:
+#    encoding: UTF-8
+#    #开发时关闭缓存,不然没法看到实时页面
+#    cache: false
+#    prefix: classpath:/template/
+#    suffix: .html
