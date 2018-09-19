@@ -27,7 +27,7 @@ public class userController {
 		}
 		return false;
 	}
-	
+	// 测试
 	@ResponseBody
 	@RequestMapping("Ajax/regiest")
 	public boolean userRegiest(Users users) {
