@@ -45,6 +45,7 @@ public class userController {
 	@RequestMapping("/MyError")
 	public void errorUpload(String errorTitle, MultipartFile[] files, ServletContext context){
 		String path = context.getRealPath("/MyError");
+
 	}
 
 	@RequestMapping("/add")
