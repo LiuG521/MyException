@@ -51,7 +51,6 @@ public class userController {
 	public void add(HttpServletResponse response) throws IOException {
 		System.out.println("------------------------");
 		PrintWriter out = response.getWriter();
-		//System.out.println("");
 		out.print("<script>alert('admin');location.href='regiest.html';</script>");
 		out.flush();
 		out.close();
